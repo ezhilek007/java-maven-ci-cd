@@ -4,14 +4,14 @@ pipeline {
 
     tools {
         maven 'Maven'
-        jdk 'JDK11'
+        jdk 'JDK21'
     }
 
     stages {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/yourusername/java-webapp.git'
+                git 'https://github.com/ezhilek007/java-maven-ci-cd.git'
             }
         }
 
