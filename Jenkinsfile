@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                sudo cp target/*.war /var/lib/tomcat10/webapps/java-webapp.war
+                cp target/*.war /var/lib/tomcat10/webapps/java-webapp.war
                 '''
             }
         }
