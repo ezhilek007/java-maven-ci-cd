@@ -28,7 +28,7 @@ pipeline {
                 docker rm -f java-container || true
                 docker run -d \
                 --name java-container \
-                -p 8080:8080 \
+                -p 8090:8080 \
                 java-webapp:v1
                 '''
             }
